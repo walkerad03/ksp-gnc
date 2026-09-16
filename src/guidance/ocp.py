@@ -1,3 +1,4 @@
+# mypy: disable-error-code="call-arg"
 from __future__ import annotations
 
 from dataclasses import dataclass

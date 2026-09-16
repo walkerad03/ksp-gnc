@@ -17,4 +17,5 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "zuban>=0.9.3",
 ]
