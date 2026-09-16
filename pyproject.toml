@@ -5,6 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "clarabel>=0.11.1",
+    "cvxpy>=1.9.2",
     "krpc>=0.6.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "scipy>=1.18.1",
     "windows-curses>=2.4.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
 ]

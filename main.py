@@ -1,6 +1,5 @@
-import time
 
-from src.core.booster_states import BoosterContext, LandedState, LaunchState
+from src.core.booster_states import BoosterContext, LaunchState
 from src.core.display import run_flight_loop
 from src.core.fsm import StateMachine
 from src.kerbal import get_active_vessel
