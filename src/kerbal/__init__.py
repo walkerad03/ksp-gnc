@@ -4,7 +4,9 @@ import krpc
 from krpc.client import Client
 from krpc.services.spacecenter import Vessel
 
+from src.kerbal.actuation import ActuationBridge, ActuationCommand
 from src.kerbal.coordinates import TopocentricFrame
+from src.kerbal.telemetry import TelemetryBridge
 
 
 def get_active_vessel(program_name: str = "program") -> tuple[Client, Vessel]:
@@ -17,4 +19,10 @@ def get_active_vessel(program_name: str = "program") -> tuple[Client, Vessel]:
     return conn, vessel
 
 
-__all__ = ["TopocentricFrame", "get_active_vessel"]
+__all__ = [
+    "ActuationBridge",
+    "ActuationCommand",
+    "TelemetryBridge",
+    "TopocentricFrame",
+    "get_active_vessel",
+]

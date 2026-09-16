@@ -438,7 +438,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/55/32/e86b7db8bcf5cfb9e
 [[package]]
 name = "ksp-gnc"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "clarabel" },
     { name = "cvxpy" },
