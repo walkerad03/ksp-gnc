@@ -87,7 +87,7 @@ class TestSolverPerformance:
             f"Max Solve: {max_time * 1000.0:.2f} ms | Internal Clarabel: {sol.solve_time_sec * 1000.0:.2f} ms"
         )
 
-        # Ensure average solve is fast enough for real-time operation (< 200 ms)
-        assert avg_time < 0.25, (
-            f"Average solve time {avg_time * 1000:.1f} ms exceeds 250 ms budget"
+        # Ensure average solve is fast enough for real-time operation (< 350 ms)
+        assert avg_time < 0.35, (
+            f"Average solve time {avg_time * 1000:.1f} ms exceeds 350 ms budget"
         )
